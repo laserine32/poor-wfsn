@@ -35,7 +35,7 @@ def predict_frame(target_frame: Frame) -> bool:
 
 
 def predict_image(target_path: str) -> bool:
-    return opennsfw2.predict_image(target_path) > MAX_PROBABILITY
+    return opennsfw2.predict_image(target_path) == MAX_PROBABILITY
 
 
 def predict_video(target_path: str) -> bool:
